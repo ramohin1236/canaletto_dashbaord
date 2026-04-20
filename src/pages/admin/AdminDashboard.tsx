@@ -17,7 +17,7 @@ const Activities = lazy(() => import('../../components/admin-components/Activiti
 function AdminDashboard() {
   const navigate = useNavigate()
   const { data: adminStats } = useGetAllAdminStatsQuery();
-  const { data: clients, isLoading } = useGetAllClientsQuery();
+  const { data: clients } = useGetAllClientsQuery();
   const [blockUnblockUser, { isLoading: isStatusUpdating }] = useBlockUnblockUserMutation()
 
   const totalClient = adminStats?.data?.totalClient
