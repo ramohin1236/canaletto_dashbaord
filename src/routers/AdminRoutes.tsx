@@ -2,7 +2,7 @@ import PropertyPackageDetails from '../pages/admin/properties/details/PropertyPa
 import { lazyLoad } from "./lazyLoad";
 
 /* Dashboard */
-const AdminDashboard = lazyLoad("admin/AdminDashboard");
+import AdminDashboard from "../pages/admin/AdminDashboard";
 
 /* Clients */
 const ManageClients = lazyLoad("admin/clients/ManageClients");
